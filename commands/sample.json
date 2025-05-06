@@ -1,0 +1,36 @@
+{
+  "title": "Sample Commands",
+  "expire": 90,
+  "commands": [
+    {
+      "description": "rootユーザに昇格",
+      "input": "sudo su -",
+      "output": "",
+      "root": false
+    },
+    {
+      "description": "お作法",
+      "input": "uname -n; whoami; pwd; date",
+      "output": "linux\nroot\n/root\n2025-01-01 00:00",
+      "root": true
+    },
+    {
+      "description": "/etc/passwdのrootの行から3フィールド目を取得する",
+      "input": "cat /etc/passwd | grep root | cut -d: -f3",
+      "output": "1",
+      "root": true
+    },
+    {
+      "description": "ユーザログアウト",
+      "input": "exit",
+      "output": "bye",
+      "root": true
+    },
+    {
+      "description": "ユーザログアウト",
+      "input": "exit",
+      "output": "bye",
+      "root": false
+    }
+  ]
+}
