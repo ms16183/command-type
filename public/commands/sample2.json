@@ -1,0 +1,30 @@
+{
+  "title": "Sample Commands2",
+  "expire": 90,
+  "commands": [
+    {
+      "description": "rootユーザに昇格",
+      "input": "sudo su -",
+      "output": "",
+      "root": false
+    },
+    {
+      "description": "お作法",
+      "input": "uname -n; whoami; pwd; date",
+      "output": "linux\nroot\n/root\n2025-01-01 00:00",
+      "root": true
+    },
+    {
+      "description": "ユーザログアウト",
+      "input": "exit",
+      "output": "bye",
+      "root": true
+    },
+    {
+      "description": "ユーザログアウト",
+      "input": "exit",
+      "output": "bye",
+      "root": false
+    }
+  ]
+}
