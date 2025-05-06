@@ -1,5 +1,4 @@
 import { Scene } from 'phaser';
-import '@fontsource/roboto-mono/700.css'; // Defaults to weight 400
 
 export class Game extends Scene {
 
